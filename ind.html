@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      color: #734b77;
+      background-color: #f4f4f4;
+      font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding:  20px 20px 20px 35px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 500px;
+      
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-container label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .in label{
+        display: inline-block;
+        margin-bottom:5px;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="submit"],
+    .form-container input[type="Email"],
+    .form-container input[type="password"],
+    .form-container input[type="date"]
+     {
+      width: 75%;
+      padding: 10px 15px 5px 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-container input[type="submit"] {
+      background-color: #f27dfc;
+      color: rgb(44, 43, 43);
+      width: 100%;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #text{
+        width:60%;
+    }
+
+    .form-container input[type="submit"]:hover {
+      background-color: #f8b0f7;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Let's Sign Up!</h2>
+    <form>
+      <label for="firstName">First name *</label>
+      <input type="text" id="firstName" name="firstName" placeholder="@bhagavan" required>
+      
+      <label for="lastName">Last name *</label>
+      <input type="text" id="lastName" name="lastName" placeholder="@reddy" required>
+      <label for="email">Enter Email *</label>
+      <input type="Email" id="email" name="email" placeholder="xyz@gmail.com" required>
+      <label for="password">password *</label>
+      <input type="password" id="password" name="password" required>
+      <label for="password">Confirm Password</label>
+      <input type="password" id="password" name="password" required>
+       <p> Choose your Gender</p>
+       <div class="in">
+      <input type="radio" id="rad" name="radio" value="Male">
+      <label for="rad">Male</label>
+      <input type="radio" id="rad" name="radio" value=" Female">
+      <label for="rad">Female</label>
+      <input type="radio" id="rad" name="radio" value="Others">
+      <label for="rad">Others</label>
+      </div>
+      <label for="date">Date Of Birth</label>
+      <input type="date" id="date" name="date" value="01-01-2000">
+      <p>Enter your Address</p>
+       <textarea name="text" id="text" placeholder="h-26,street-2,kukatpally,hyd"></textarea>
+
+      
+      <input type="submit" value="Sign Up">
+    </form>
+  </div>
+</body>
+</html>
